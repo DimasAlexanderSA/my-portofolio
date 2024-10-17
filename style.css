@@ -4,7 +4,7 @@
 
     
 nav.navbar{
-    width: 100%;
+    width: inherit;
     user-select: none;
     display: flex;
     justify-content: space-between;
@@ -354,13 +354,26 @@ main.about{
     flex-wrap: wrap;
 }
 
+main.about div.aboutme{
+    display: flex;
+    flex-direction: column;
+    border: 2px white solid;
+    border-radius: 20%;
+    color: white;
+    height: 200px;
+    width: 200px;
+}
+
 main.about div.aboutme h1{
     text-align: center;
     color: white;
-    border: 2px white solid;
-    border-radius: 20%;
-    height: 200px;
-    width: 200px;
+    margin: 0rem;
+    margin-bottom: 20px
+}
+
+main.about div.aboutme p{
+    margin: 0rem;
+    text-align: center;
 }
 
 /*
