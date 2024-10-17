@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0,width=device-width">
+        <title>Portofolio - Dimas</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="script"></script> -->
+        <link rel="icon" href="smile.png">
+    </head>
+    <!-- rgb(2, 33, 47); -->
+    <body style="background-color: rgb(2, 16, 47);">
+        <nav class="navbar">
+            <div class="logoContainer">
+                <!-- <img src="/smile"> -->
+                 <h1> Dimas </h1>
+            </div>
+            <ul class="direct">
+                <li><a href="#" id="home"><strong>Home</strong></a></li>
+                <li><a href="#" id="about"><strong>About</strong></a></li>
+                <!-- <li><a href="#" id="contact"><strong>Contact</strong></a></li> -->
+                <li><a href="#" id="school"><strong>School</strong></a></li>
+            </ul>
+        </nav>
+
+        <div id="body" style="position:absolute; top: 0%"></div>
+        <main class="body">
+            <div class="text">
+                <h1 class="welcome">Hey!</h1>
+                <div class="introduce">
+                    <h1>I</h1>
+                    <h1>Am</h1>
+                    <h1>A</h1>
+                    <h1>Student</h1>
+                </div>
+                <p>
+My name is <strong class="strong">Dimas</strong> <strong class="strong">Alexander</strong> <strong class="strong">Sabian</strong> <strong class="strong">Abimanyu</strong>, and I'm from ten grade <strong class="strong">Software</strong> <strong class="strong">Engineering</strong>.<br>I'm still learning to make a great website :D
+                </p>
+                    
+            </div>
+            <div class="imgContainer">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <img class="image" src="image.png">
+            </div>
+        </main>
+
+        <div id="about" style="position: absolute; top:85%;"></div>
+        <main class="about">
+            <h1 style="color:white"></h1>
+            <div>
+                
+            </div>
+            <div>
+
+            </div>
+        </main>
+
+        <!-- <div id="contact" style="position: absolute; top:170%;"></div>
+        <main class="contact">
+            <h1 style="color:white">Contact</h1>
+        </main> -->
+
+        <div id="school" style="position: absolute; top:170%;"></div>
+        <main class="school">
+            
+            <h1 id="tisch">School</h1>
+            <div class="sch">
+                <div class="my-school">
+                    <div id="sdpng">
+                        <img class='sd' src="sd.png">
+                    </div>
+                    <a href="#" id="sdbutt"><h1>Kartika Sejahtera 01</h1></a>
+                </div>
+
+                <div class="my-school">
+                    <div id="oelpng">
+                        <img class="oel" src="oel.png">
+                    </div>
+                    <a href="https://oel.sch.id"><h1>Ora Et Labora</h1></a>
+                </div>
+
+                <div class="my-school">
+                    <div id="letrispng">
+                        <img class="letris" src="letris.png">
+                    </div>
+                    <a href="https://smkletris2pamulang.sch.id"><h1>Letris Indonesia 2</h1></a>
+                </div>
+            </div>
+            
+        </main>
+
+
+        <script>
+                        document.querySelector("nav.navbar ul.direct li a#home").addEventListener('click',(event)=>{
+            event.preventDefault();
+            document.querySelector("div#body").scrollIntoView({'behavior':'smooth'});
+            });
+
+            document.querySelector("nav.navbar ul.direct li a#about").addEventListener('click',(event)=>{
+                event.preventDefault();
+                document.querySelector('div#about').scrollIntoView({'behavior':'smooth'});
+            });
+
+            // document.querySelector("nav.navbar ul.direct li a#contact").addEventListener('click',(event)=>{
+            //     event.preventDefault();
+            //     document.querySelector("div#contact").scrollIntoView({'behavior':'smooth'});
+            // });
+
+            document.querySelector("nav.navbar ul.direct li a#school").addEventListener('click',(event)=>{
+                event.preventDefault();
+                document.querySelector("div#school").scrollIntoView({'behavior':'smooth'});
+            });
+            
+            document.querySelector("main.school div.my-school a#sdbutt ").addEventListener('click',event=>{
+                event.preventDefault();
+            });
+
+        </script>
+    </body>
+    <footer>
+        <strong class="foot">Created By Dimas</strong>
+    </footer>
+</html>

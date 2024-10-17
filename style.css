@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+nav.navbar{
+    user-select: none;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0rem;
+    background-color: rgb(2, 16, 47);
+    z-index: 2;
+}
+
+nav.navbar div.logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: "Roboto Flex",sans-serif,serif;
+}
+
+nav.navbar ul.direct{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3.125rem;
+    margin-right:6.25rem;
+}
+
+nav.navbar div.logoContainer h1{
+    color: rgb(177, 45, 72);
+    margin-left: 6.25rem;
+    font-family:"Titillium Web",sans-serif,serif;
+    font-size: 1.875rem;
+}
+
+nav.navbar ul.direct li{
+    list-style: none;
+}
+
+nav.navbar ul.direct li a{
+    border-radius: 20%;   
+    border: 0.1875rem rgb(2, 16, 47) solid; 
+    text-decoration: none;
+    font-family: "Roboto Flex",serif ;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.9375rem;
+    transition: border .1s ease-in-out;
+    transition: border-radius .4s ease-in-out,color .4s ease-in-out,background-color .4s ease-in-out;
+}
+
+
+
+nav.navbar ul.direct li a:hover{
+    border: 0.1875rem rgb(255, 255, 255) solid; 
+    border-radius: 50%;   
+    background-color: white;
+    color:black;
+}
+
+main.body div.text{
+    margin-top: 9.375rem;
+    margin-left: 6.25rem;
+    width:50%;
+}
+
+main.body div.text h1.welcome{
+    width: 4.0625rem;
+    font-family: "Titillium Web";
+    color:rgb(177, 45, 72);
+    font-size: 1.875rem;
+    position: relative;
+    align-items: center;
+    overflow:hidden;
+    border-color: transparent;
+    animation: typing1 .7s ease-in-out;
+}
+
+main.body div.text div.introduce{
+    width: 0rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 1.875rem;
+    color: white;
+    font-family: "Titillium Web";
+    height: 4.0625rem;
+    animation:typing2 2s .7s linear 1 forwards, cur .7s 2.7s 6 forwards;
+    border-color: transparent;
+}
+
+@keyframes typing1{
+    0%{
+        border-right: .3125rem white solid;
+        width:0rem;
+    }
+    100%{
+        border-right: .3125rem white solid;
+        width: 4.0625rem;
+    }
+
+}
+
+@keyframes typing2{
+    0%{
+        border-right: .3125rem white solid;
+        width: 0rem;
+    }
+    25%{
+        border-right: .3125rem white solid;
+        width: 8.125rem;
+    }
+    50%{
+        border-right: .3125rem white solid;
+        width: 11.875rem;
+    }
+    75%{
+        border-right: .3125rem white solid;
+        width: 19.1875rem;
+    }
+    100%{
+        border-right: .3125rem white solid;
+        width: 26.25rem;
+    }
+}
+
+@keyframes cur {
+    0%{
+        border-right: 0.3125rem transparent solid;
+    }
+    50%{
+        border-right: 0.3125rem white solid;
+    }
+    100%{
+        border-right: 0.3125rem transparent solid;
+        
+    }
+}
+
+main.body div.text p{
+    color: white;
+    font-size: 0.9375rem;
+    font-family: "Titillium Web";
+    align-items:center;
+}
+
+main.body div.text p strong.strong{
+    font-family:"IBM Plex Mono", monospace;
+    font-size: 0.875rem;
+}
+
+main.body div.text p {
+    animation: textmove 1s linear 1;
+}
+
+@keyframes textmove{
+    0%{
+        color: rgba(255, 255, 255, 0);
+  
+    }
+    25%{
+        color: rgba(255, 255, 255, 0.279);
+       
+    }
+    50%{
+        color: rgba(255, 255, 255,0.521);
+
+    }
+    100%{
+        color: rgb(255, 255, 255);
+   
+    }
+}
+
+main.body div.text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+main.body{
+    display: flex;
+    height:100%;
+}
+
+main.body div.imgContainer{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:37.5rem;
+}
+
+main.body div.imgContainer div.circle1{
+    position: absolute;
+    border-radius: 100%;
+    background-color: rgb(9, 30, 106);
+    width: 31.25rem;
+    height: 31.25rem;
+    z-index: -1;
+    box-shadow: 1.875rem -1.25rem 1.25rem;
+}
+
+main.body div.imgContainer div.circle2{
+    position: absolute;
+    border-radius: 100%;
+    width: 31.25rem;
+    height: 31.25rem;
+    left:3.75rem;
+    background-color: rgb(20, 20, 94);
+    animation: moving1 1s linear 1; 
+    z-index: -1;
+    box-shadow: -1.25rem -1.25rem 1.25em;
+}
+
+main.body div.imgContainer div.circle3{
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: -1.25rem -1.25rem 1.25rem;
+    width: 31.25rem;
+    height: 31.25rem;
+    left:18.75rem;
+    background-color: rgb(28, 28, 96);
+    z-index: -2;
+    animation: moving2 1s linear 1;
+}
+
+@keyframes moving1{
+    0%{
+        background-color: rgba(20, 20, 94, 0);
+        left: 0rem;
+    }
+    25%{
+        background-color: rgba(20, 20, 94, 0.279);
+        left: 1.25rem;
+    }
+    50%{
+        background-color: rgba(20, 20, 94, 0.521);
+        left:2.1875rem;
+    }
+    100%{
+        background-color: rgb(20, 20, 94);
+        left: 3.75rem;
+    }
+}
+
+@keyframes moving2{
+    0%{
+        background-color: rgba(28, 28, 96,0);
+  
+    }
+    25%{
+        background-color: rgba(28, 28, 96,0.279);
+       
+    }
+    50%{
+        background-color: rgba(28, 28, 96,0.521);
+
+    }
+    100%{
+        background-color: rgb(28, 28, 96);
+   
+    }
+}
+
+main.body div.imgContainer img.image{
+    width: 35.625rem;
+    height: 35.625rem;
+}
+
+/*
+--------------------------------                        about
+----------------------------------*/
+
+
+main.about{
+    height: 40.125rem;
+    display: flex;
+}
+
+/*
+--------------------------------                        contact
+----------------------------------*/
+
+
+/* 
+main.contact{
+    height: 40.125rem;
+    display: flex;
+} */
+
+/*
+--------------------------------                        school
+----------------------------------*/
+
+
+
+main.school div.sch{
+    height: 40.125rem;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+main.school div.sch div.my-school{
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px white solid;
+    height: 18.75rem;
+    width: 21.875rem;
+    padding-top: 0rem;
+    background-color: white;
+    border-radius: 20%;
+    transition: transform .2s linear;
+    user-select:none;
+}
+
+main.school div.sch div.my-school a{
+    text-decoration: none;
+    padding: 0rem;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 0rem;
+    color: black;
+}
+
+main.school div.sch div.my-school:hover{
+    transform: scale(1.05);
+    background-color: rgb(2, 16, 47);
+    border-color: transparent;
+}
+
+main.school div.sch div.my-school a h1{
+    font-family: "Titillium Web",sans-serif,sans;
+}
+
+main.school div.sch div.my-school:hover a h1{
+    color: white;
+}
+
+main.school div.sch div.my-school a:hover h1{
+    color: blue;
+}
+
+main.school div.sch div.my-school div#sdpng img.sd{
+    margin: 0.625rem;
+}
+
+main.school div.sch div.my-school div#oelpng img.oel{
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+main.school div.sch div.my-school div#letrispng img.letris{
+    width: 9.375rem;
+    height: 9.375rem;
+    margin-bottom: 0rem;
+}
+
+main.school div.sch div.my-school div#letrispng{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.school div.sch div.my-school div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main.school h1#tisch{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer strong.foot{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.25rem;
+    color: rgb(177, 45, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0%; 
+    border-radius: 30%;
+}
+
+
