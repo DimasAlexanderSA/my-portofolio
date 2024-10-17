@@ -340,15 +340,15 @@ main.school div.sch div.my-school:hover{
     border-color: transparent;
 }
 
-main.school div.sch div.my-school a h1{
+main.school div.sch div.my-school a h2{
     font-family: "Titillium Web",sans-serif,sans;
 }
 
-main.school div.sch div.my-school:hover a h1{
+main.school div.sch div.my-school:hover a h2{
     color: white;
 }
 
-main.school div.sch div.my-school a:hover h1{
+main.school div.sch div.my-school a:hover h2{
     color: blue;
 }
 
