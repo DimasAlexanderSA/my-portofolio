@@ -81,6 +81,14 @@ div#thrline div{
         margin-left: 1.25rem;
     }
 
+    main.about div.hob{
+        margin-left: 1.25rem;
+    }
+
+    main.about div.bor{
+        margin-right: 1.25rem;
+    }
+
 }
 
 @media (min-width:850px){
@@ -94,6 +102,13 @@ div#thrline div{
 
     nav.navbar ul.direct{
         flex-direction: row;
+    }
+    main.about div.hob{
+        margin-left: 6.25rem;
+    }
+
+    main.about div.bor{
+        margin-right: 6.25rem;
     }
 }
 
@@ -370,11 +385,10 @@ main.about div.bor{
 }
 
 main.about div div.aboutme{
-    margin-left: 6.25rem;
     display: flex;
     flex-direction: column;
     color: white;
-    gap: 20px;
+    gap: 50px;
 }
 
 main.about div div.aboutme img.music{
@@ -384,29 +398,18 @@ main.about div div.aboutme img.music{
     width: 300px ;
 }
 
-main.about div div.aboutme h1{
+/* main.about div div.aboutme h1{
     text-align: center;
     color: white;
     margin: 0rem;
     margin-bottom: 20px
-}
+} */
 
 main.about div div.aboutme p{
     margin: 0rem;
     text-align: center;
     font-family: "Titillium Web",sans-serif,sans;
 }
-
-/*
---------------------------------                        contact
-----------------------------------*/
-
-
-/* 
-main.contact{
-    height: 40.125rem;
-    display: flex;
-} */
 
 /*
 --------------------------------                        school
