@@ -16,11 +16,16 @@
                  <h1> Dimas </h1>
             </div>
             <ul class="direct">
-                <li><a href="#" id="home"><strong>Home</strong></a></li>
-                <li><a href="#" id="about"><strong>About</strong></a></li>
+                <li><div id="home"><strong>Home</strong></div></li>
+                <li><div id="about"><strong>About</strong></div></li>
                 <!-- <li><a href="#" id="contact"><strong>Contact</strong></a></li> -->
-                <li><a href="#" id="school"><strong>School</strong></a></li>
+                <li><div id="school"><strong>School</strong></div></li>
             </ul>
+            <div id="thrline">
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
+            </div>
         </nav>
 
         <div id="body" style="position:absolute; top: 0%"></div>
@@ -46,14 +51,14 @@ My name is <strong class="strong">Dimas</strong> <strong class="strong">Alexande
             </div>
         </main>
 
-        <div id="about" style="position: absolute; top:85%;"></div>
+        <div id="at" style="position: absolute; top:85%;"></div>
         <main class="about">
-            <h1 style="color:white"></h1>
-            <div>
-                <h2>Hobby</h2>
+            <div class="aboutme">
+                <h1>Hobby</h1>
+                <p>I usually listen to music </p>
             </div>
-            <div>
-
+            <div class="aboutme">
+                <h1>whatever</h1>
             </div>
         </main>
 
@@ -62,7 +67,7 @@ My name is <strong class="strong">Dimas</strong> <strong class="strong">Alexande
             <h1 style="color:white">Contact</h1>
         </main> -->
 
-        <div id="school" style="position: absolute; top:170%;"></div>
+        <div id="s" style="position: absolute; top:170%;"></div>
         <main class="school">
             
             <h1 id="tisch">School</h1>
@@ -93,14 +98,15 @@ My name is <strong class="strong">Dimas</strong> <strong class="strong">Alexande
 
 
         <script>
-                        document.querySelector("nav.navbar ul.direct li a#home").addEventListener('click',(event)=>{
+            let cond = false;
+                        document.querySelector("nav.navbar ul.direct li div#home").addEventListener('click',(event)=>{
             event.preventDefault();
             document.querySelector("div#body").scrollIntoView({'behavior':'smooth'});
             });
 
-            document.querySelector("nav.navbar ul.direct li a#about").addEventListener('click',(event)=>{
+            document.querySelector("nav.navbar ul.direct li div#about").addEventListener('click',(event)=>{
                 event.preventDefault();
-                document.querySelector('div#about').scrollIntoView({'behavior':'smooth'});
+                document.querySelector('div#at').scrollIntoView({'behavior':'smooth'});
             });
 
             // document.querySelector("nav.navbar ul.direct li a#contact").addEventListener('click',(event)=>{
@@ -108,14 +114,28 @@ My name is <strong class="strong">Dimas</strong> <strong class="strong">Alexande
             //     document.querySelector("div#contact").scrollIntoView({'behavior':'smooth'});
             // });
 
-            document.querySelector("nav.navbar ul.direct li a#school").addEventListener('click',(event)=>{
+            document.querySelector("nav.navbar ul.direct li div#school").addEventListener('click',(event)=>{
                 event.preventDefault();
-                document.querySelector("div#school").scrollIntoView({'behavior':'smooth'});
+                document.querySelector("div#s").scrollIntoView({'behavior':'smooth'});
             });
             
             document.querySelector("main.school div.my-school a#sdbutt ").addEventListener('click',event=>{
                 event.preventDefault();
             });
+
+            document.querySelector("div#thrline").addEventListener('click',event=>{
+                if(cond){
+                    cond = false;
+                    document.querySelector("nav.navbar ul.direct").style.display = "flex"
+                }else{
+                    cond = true;
+                    document.querySelector("nav.navbar ul.direct").style.display = "none"
+                }
+                event.preventDefault();
+
+                
+                
+            })
 
         </script>
     </body>

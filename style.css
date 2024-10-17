@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+    
 nav.navbar{
+    width: 100%;
     user-select: none;
-    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,6 +14,8 @@ nav.navbar{
     background-color: rgb(2, 16, 47);
     z-index: 2;
 }
+
+
 
 nav.navbar div.logoContainer{
     display: flex;
@@ -27,11 +30,76 @@ nav.navbar ul.direct{
     justify-content: end;
     gap: 3.125rem;
     margin-right:6.25rem;
+    }
+
+div#thrline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1875rem;
+    color: transparent;
+    background-color: transparent;
+    margin-right:1.25rem;
+    cursor: pointer;
 }
+
+div#thrline div{
+    background-color: white;
+    height: 0.3125rem;
+    width: 1.875rem;
+}
+
+@media (min-width: 700px){
+    main.body div.imgContainer img.image{
+        display: flex;
+    }
+
+    main.body div.imgContainer div.circle1{
+        display: flex;
+    }
+}
+
+@media (max-width: 700px){
+    main.body div.imgContainer img.image{
+        display: none;
+    }
+
+    main.body div.imgContainer div.circle1{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    div#thrline{
+        display: flex;
+    }
+    nav.navbar ul.direct{
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.navbar div.logoContainer h1{
+        margin-left: 1.25rem;
+    }
+
+}
+
+@media (min-width:850px){
+    div#thrline{
+        display: none;
+    }
+
+    nav.navbar div.logoContainer h1{
+        margin-left: 6.25rem;
+    }
+
+    nav.navbar ul.direct{
+        flex-direction: row;
+    }
+}
+
 
 nav.navbar div.logoContainer h1{
     color: rgb(177, 45, 72);
-    margin-left: 6.25rem;
     font-family:"Titillium Web",sans-serif,serif;
     font-size: 1.875rem;
 }
@@ -40,7 +108,7 @@ nav.navbar ul.direct li{
     list-style: none;
 }
 
-nav.navbar ul.direct li a{
+nav.navbar ul.direct li div{
     border-radius: 20%;   
     border: 0.1875rem rgb(2, 16, 47) solid; 
     text-decoration: none;
@@ -50,11 +118,12 @@ nav.navbar ul.direct li a{
     padding: 0.9375rem;
     transition: border .1s ease-in-out;
     transition: border-radius .4s ease-in-out,color .4s ease-in-out,background-color .4s ease-in-out;
+    cursor: pointer;
 }
 
 
 
-nav.navbar ul.direct li a:hover{
+nav.navbar ul.direct li div:hover{
     border: 0.1875rem rgb(255, 255, 255) solid; 
     border-radius: 50%;   
     background-color: white;
@@ -280,6 +349,18 @@ main.body div.imgContainer img.image{
 main.about{
     height: 40.125rem;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main.about div.aboutme h1{
+    text-align: center;
+    color: white;
+    border: 2px white solid;
+    border-radius: 20%;
+    height: 200px;
+    width: 200px;
 }
 
 /*
