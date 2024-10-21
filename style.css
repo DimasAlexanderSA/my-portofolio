@@ -361,7 +361,7 @@ main.body div.imgContainer img.image{
 ----------------------------------*/
 
 
-main.about{
+/* main.about{
     height:  40.125rem;
     display: flex;
     justify-content: space-evenly;
@@ -398,18 +398,18 @@ main.about div div.aboutme img.music{
     width: 300px ;
 }
 
-/* main.about div div.aboutme h1{
+ main.about div div.aboutme h1{
     text-align: center;
     color: white;
     margin: 0rem;
     margin-bottom: 20px
-} */
+} 
 
 main.about div div.aboutme p{
     margin: 0rem;
     text-align: center;
     font-family: "Titillium Web",sans-serif,sans;
-}
+} */
 
 /*
 --------------------------------                        school
