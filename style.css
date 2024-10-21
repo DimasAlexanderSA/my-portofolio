@@ -403,10 +403,11 @@ main.about div div.aboutme{
 }
 
 
-main.about div div.aboutme img.music{
+main.about div div.aboutme img.music, main.about div div.aboutme img.malang{
     position: relative;
     border-radius: 70%;
 }
+
 /*
 
  main.about div div.aboutme h1{
